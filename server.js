@@ -44,6 +44,7 @@ app.post('/', (req, res) => {
       result = {
         message: 'Su mensaje no pudo ser enviado.',
       };
+      return res.send(views.landing(result));
     }
     result = {
       message: 'Gracias por su mensaje.',
