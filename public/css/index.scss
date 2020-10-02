@@ -32,7 +32,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 750px;
+  max-width: 800px;
   width: 100%;
   padding: 0 24px;
 
@@ -49,5 +49,38 @@ body {
     font: normal normal normal 23px/32px Source Code Pro;
     font-weight: lighter;
     margin: 0;
+  }
+
+  &__contact-form-wrapper {
+    display: flex;
+    margin-top: 28px;
+  }
+
+  &__input {
+    color: #333333;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    font: normal normal normal 23px/28px Source Code Pro;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 12px;
+    flex: 1;
+    outline: none;
+  }
+  &__button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333333;
+    width: 236px;
+    height: 72px;
+    color: #fff;
+    cursor: pointer;
+    font: normal normal 600 16px/24px Source Code Pro;
   }
 }
