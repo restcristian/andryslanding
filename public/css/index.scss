@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro:wght@300;400&display=swap');
+$mobile: 750px;
 body {
   background: #beecfa;
   margin: 0;
@@ -44,16 +45,30 @@ body {
     margin: 0;
     color: #333333;
     font: normal normal 600 80px/116px Montserrat;
+    line-height: 1;
+
+    @media (max-width: $mobile) {
+      font-size: 50px;
+    }
   }
   &__description {
     font: normal normal normal 23px/32px Source Code Pro;
     font-weight: lighter;
     margin: 0;
+    line-height: 1.5;
+    @media (max-width: $mobile) {
+      font-size: 17px;
+      margin-top: 12px;
+    }
   }
 
   &__contact-form-wrapper {
     display: flex;
     margin-top: 28px;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
   }
 
   &__input {
@@ -69,6 +84,11 @@ body {
     padding-bottom: 12px;
     flex: 1;
     outline: none;
+    @media (max-width: $mobile) {
+      display: block;
+      flex: 0 1 auto;
+      width: 100%;
+    }
   }
   &__button {
     -webkit-appearance: none;
@@ -82,5 +102,10 @@ body {
     color: #fff;
     cursor: pointer;
     font: normal normal 600 16px/24px Source Code Pro;
+    @media (max-width: $mobile) {
+      display: block;
+      margin-top: 12px;
+      width: 100%;
+    }
   }
 }

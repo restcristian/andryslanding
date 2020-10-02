@@ -46,12 +46,27 @@ body {
   margin: 0;
   color: #333333;
   font: normal normal 600 80px/116px Montserrat;
+  line-height: 1;
+}
+
+@media (max-width: 750px) {
+  .content__title {
+    font-size: 50px;
+  }
 }
 
 .content__description {
   font: normal normal normal 23px/32px Source Code Pro;
   font-weight: lighter;
   margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 750px) {
+  .content__description {
+    font-size: 17px;
+    margin-top: 12px;
+  }
 }
 
 .content__contact-form-wrapper {
@@ -59,6 +74,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 28px;
+}
+
+@media (max-width: 750px) {
+  .content__contact-form-wrapper {
+    display: block;
+  }
 }
 
 .content__input {
@@ -79,6 +100,16 @@ body {
   outline: none;
 }
 
+@media (max-width: 750px) {
+  .content__input {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 100%;
+  }
+}
+
 .content__button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -92,5 +123,13 @@ body {
   color: #fff;
   cursor: pointer;
   font: normal normal 600 16px/24px Source Code Pro;
+}
+
+@media (max-width: 750px) {
+  .content__button {
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
