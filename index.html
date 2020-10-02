@@ -37,18 +37,25 @@
             Esta página se encuentra bajo mantenimiento.</br>Si estas interesado/a,contáctame.
           </p>
         </div>
-        <!-- <form action="/" class="content__contact-form">
+        <form action="/" class="content__contact-form" method="POST">
           <div class="content__contact-form-wrapper">
             <input
-              class="content__input"
+              class="content__input content__email"
+              type="email"
+              name="email"
+			  placeholder="Email"
+			  required
+			/>
+			<input
+              class="content__input content__message"
               type="text"
-              name=""
-              id=""
-              placeholder="Escríbeme aquí"
+              name="message"
+			  placeholder="Escribe aquí"
+			  required
             />
             <button class="content__button" type="submit">Enviar</button>
           </div>
-        </form> -->
+        </form>
       </div>
     </main>
   </body>

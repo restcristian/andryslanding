@@ -33,7 +33,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   padding: 0 24px;
 
@@ -88,7 +88,11 @@ body {
       display: block;
       flex: 0 1 auto;
       width: 100%;
+      margin-bottom: 12px;
     }
+  }
+  &__email {
+    margin-right: 24px;
   }
   &__button {
     -webkit-appearance: none;
@@ -104,7 +108,6 @@ body {
     font: normal normal 600 16px/24px Source Code Pro;
     @media (max-width: $mobile) {
       display: block;
-      margin-top: 12px;
       width: 100%;
     }
   }

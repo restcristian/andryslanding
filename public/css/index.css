@@ -33,7 +33,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   padding: 0 24px;
 }
@@ -107,7 +107,12 @@ body {
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
     width: 100%;
+    margin-bottom: 12px;
   }
+}
+
+.content__email {
+  margin-right: 24px;
 }
 
 .content__button {
@@ -128,7 +133,6 @@ body {
 @media (max-width: 750px) {
   .content__button {
     display: block;
-    margin-top: 12px;
     width: 100%;
   }
 }
