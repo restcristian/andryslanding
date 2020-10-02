@@ -51,6 +51,12 @@ body {
       font-size: 50px;
     }
   }
+
+  &__title-message {
+    margin-top: 47px;
+    text-align: center;
+  }
+
   &__description {
     font: normal normal normal 23px/32px Source Code Pro;
     font-weight: lighter;
@@ -84,6 +90,16 @@ body {
     padding-bottom: 12px;
     flex: 1;
     outline: none;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      background-color: transparent !important;
+      color: #333333 !important;
+      -webkit-box-shadow: 0 0 0 1000px white inset !important;
+      -webkit-text-fill-color: #333333 !important;
+    }
+
     @media (max-width: $mobile) {
       display: block;
       flex: 0 1 auto;

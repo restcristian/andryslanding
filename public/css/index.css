@@ -55,6 +55,11 @@ body {
   }
 }
 
+.content__title-message {
+  margin-top: 47px;
+  text-align: center;
+}
+
 .content__description {
   font: normal normal normal 23px/32px Source Code Pro;
   font-weight: lighter;
@@ -98,6 +103,13 @@ body {
       -ms-flex: 1;
           flex: 1;
   outline: none;
+}
+
+.content__input:-webkit-autofill, .content__input:-webkit-autofill:hover, .content__input:-webkit-autofill:focus, .content__input:-webkit-autofill:active {
+  background-color: transparent !important;
+  color: #333333 !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #333333 !important;
 }
 
 @media (max-width: 750px) {
