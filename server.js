@@ -23,21 +23,22 @@ app.post('/', (req, res) => {
 
   const mailData = {
     to: 'hi@andrysfrias.com',
-    from: email,
-    subject: 'Message from the Landing Page',
+    from: 'andrysfrias@gmail.com',
+    subject: `Message from the Landing Page <${email}>`,
     text: message,
     html: `<strong>${message}</strong>`,
   };
   let result = {};
-  sgMail.send(mailData).then(
-    (data) => {
+  sgMail
+    .send(mailData)
+    .then((data) => {
       console.log('data', data);
       result = {
         message: 'Gracias por su mensaje.',
       };
       return res.send(views.landing(result));
-    },
-    (error) => {
+    })
+    .catch((error) => {
       console.log('error', error);
       if (error.response) {
         result = {
@@ -45,8 +46,7 @@ app.post('/', (req, res) => {
         };
         return res.send(views.landing(result));
       }
-    }
-  );
+    });
 });
 
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
