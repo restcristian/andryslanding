@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap");
+body {
+  background: #beecfa;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 1400px;
+  padding: 0 24px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body.is-menu-open .header__menu-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+body.is-menu-white .header__btn-toggle, body.is-menu-open .header__btn-toggle {
+  background-color: #fff;
+}
+body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg path {
+  fill: #fff;
+}
+
+.header {
+  padding-top: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+}
+.header__logo {
+  width: 50px;
+}
+.header__logo svg path {
+  transition: all 0.6s ease-in-out;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 300;
+}
+.header__btn-toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.header__btn-toggle:hover {
+  transform: scale(1.4);
+}
+.header__btn-toggle > span {
+  position: fixed;
+  top: -99999px;
+  left: -99999px;
+  display: block;
+}
+.header__menu-dropdown {
+  transition: 0.5s ease-in-out all;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(1, 24, 50, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.header__menu-dropdown nav {
+  width: 100%;
+}
+.header__menu-dropdown ul {
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 8px;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.header__menu-dropdown li {
+  margin: 24px 0;
+}
+.header__menu-dropdown li a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.home,
+.work {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.home {
+  top: 50px;
+}
+
+.home__content,
+.work__content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.home__wrapper {
+  width: 100%;
+}
+.home__presentation {
+  max-width: 832px;
+}
+.home__heading {
+  color: #333;
+  font-size: 120px;
+  line-height: 116px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+.home__heading span {
+  display: block;
+}
+.home__heading span.light {
+  font-weight: 300;
+}
+@media (max-width: 844px) {
+  .home__heading {
+    font-size: 90px;
+    line-height: 86px;
+  }
+}
+.home__subline {
+  font-family: "Source Code Pro", monospace;
+  font-size: 23px;
+  text-decoration: underline;
+  margin-top: 28px;
+  display: block;
+  color: #333;
+}
+.home__description {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-top: 12px;
+}
+.home__description .stuff {
+  position: relative;
+  padding: 0 24px;
+}
+.home__description .stuff:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+.home__description .bold {
+  font-weight: bold;
+}
+.home__arrow {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.work__counter-container {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  opacity: 0;
+  visibility: hidden;
+  transition: color 0.8s ease-in-out;
+}
+.work__counter-container.dark {
+  color: #333;
+}
+.work__numbers {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.work__pipe {
+  padding: 0 4px;
+}
+.work__total {
+  font-size: 18px;
+}
+.work__project-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+.work__presentation {
+  width: 100%;
+}
+.work__slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 78px;
+}
+.work__slide.dark .work__information {
+  color: #333;
+}
+.work__picture {
+  max-width: 400px;
+}
+.work__picture img {
+  max-width: 100%;
+  height: auto;
+}
+.work__information {
+  flex: 1;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  padding-left: 24px;
+}
+.work__type {
+  display: block;
+  font-size: 30px;
+}
+.work__title {
+  display: block;
+  font-size: 60px;
+  font-weight: 600;
+}
+.work__description {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+}
+.work__table {
+  width: 100%;
+}
+.work__table-row {
+  display: flex;
+  padding-top: 10px;
+}
+.work__table-column, .work__table-header {
+  flex: 1;
+}
+.work__table-header {
+  font-weight: 600;
+}
+.work__slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 1120px;
+  transform: translateX(-50%);
+}
+
+/*# sourceMappingURL=/home.1f34663d.css.map */
