@@ -1,4 +1,5 @@
 import Highway from '@dogstudio/highway';
+
 import {
     TweenMax,
     TimelineMax,
@@ -20,6 +21,26 @@ export class WorkRenderer extends Highway.Renderer {
         }
     }
     onLeaveCompleted() {}
+}
+
+export class HomeRenderer extends Highway.Renderer {
+    onEnter() {
+        window.addEventListener('scroll', this.onScroll);
+        window.scrollTo(0, 0);
+    }
+    onLeave() {
+        window.removeEventListener('scroll', this.onScroll);
+    }
+    onEnterCompleted() {}
+    onLeaveCompleted() {}
+    onScroll = () => {
+        // If user reached bottom of the Page
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            const arrowBtn = document.querySelector('a.home__arrow');
+            console.log(arrowBtn);
+            arrowBtn.click();
+        }
+    }
 }
 
 class ScrollSlider {

@@ -17,17 +17,17 @@ body {
     width: 100%;
 }
 
-.main {
-    @media(max-width: 767px) {
-        display: none;
-    }
-}
+// .main {
+//     @media(max-width: 767px) {
+//         display: none;
+//     }
+// }
 
-.no-desktop {
-    @media(min-width: 768px) {
-        display: none;
-    }
-}
+// .no-desktop {
+//     @media(min-width: 768px) {
+//         display: none;
+//     }
+// }
 
 body {
 

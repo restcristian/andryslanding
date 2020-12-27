@@ -11,16 +11,22 @@ const PORT = process.env.PORT || 5000;
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
+app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'dist', 'home.html'));
   // res.send(views.landing({ message: '' }));
 });
 
 app.post('/', (req, res) => {
-  const { email, message } = req.body;
+  const {
+    email,
+    message
+  } = req.body;
 
   const mailData = {
     to: 'hi@andrysfrias.com',

@@ -38,24 +38,6 @@ class Fade extends Highway.Transition {
                     done();
                 }
             })
-        // tl
-        //     .fromTo(to, 0.5, {
-        //         left: '-100%',
-        //         onStart: function () {
-        //             document.body.classList.remove('is-menu-open')
-        //         }
-        //     }, {
-        //         left: '0%'
-        //     })
-        //     .fromTo(to, 0.5, {
-        //         // height: '2vh'
-        //     }, {
-        //         // height: '90vh',
-        //         onComplete: function () {
-        //             from.remove();
-        //             done();
-        //         }
-        //     })
     }
     out({
         from,

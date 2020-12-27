@@ -1,17 +1,22 @@
 import Highway from '@dogstudio/highway';
 import Fade from './transitions';
 import {
-    WorkRenderer
+    WorkRenderer,
+    HomeRenderer
 } from './renderers'
 
 const H = new Highway.Core({
     renderers: {
-        work: WorkRenderer
+        work: WorkRenderer,
+        home: HomeRenderer
     },
     transitions: {
+        home: Fade,
         default: Fade
     }
 });
+
+window.hwInstance = H;
 
 // Menu toggle 
 
