@@ -15,7 +15,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.send(views.landing({ message: '' }));
+  res.sendFile(path.resolve(__dirname, 'index.html'));
+  // res.send(views.landing({ message: '' }));
 });
 
 app.post('/', (req, res) => {
