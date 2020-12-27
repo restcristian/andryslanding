@@ -3,10 +3,18 @@ import Highway from '@dogstudio/highway';
 import {
     TweenMax,
     TimelineMax,
-    Power0
+    Power0,
+    gsap
 } from 'gsap';
 
+
+import TextPlugin from 'gsap/TextPlugin'
+
+gsap.registerPlugin(TextPlugin);
 let slider;
+let stuffTL = new TimelineMax({
+    repeat: -1
+});
 export class WorkRenderer extends Highway.Renderer {
     onEnter() {
         const sliderRef = this.wrap.querySelector('.work__slider');
@@ -27,12 +35,41 @@ export class HomeRenderer extends Highway.Renderer {
     onEnter() {
         window.addEventListener('scroll', this.onScroll);
         window.scrollTo(0, 0);
+
+        this.animateStuffWord();
+
+
     }
     onLeave() {
         window.removeEventListener('scroll', this.onScroll);
+        stuffTL.clear();
+        stuffTL.kill();
     }
     onEnterCompleted() {}
     onLeaveCompleted() {}
+
+    animateStuffWord() {
+        const wordList = ["stuff", "UX/UI", "apps", "email", "branding", "editorial"];
+        const stuffRef = document.querySelector('.stuff');
+
+        stuffRef.innerHTML = "";
+
+        wordList.forEach(word => {
+            stuffTL
+                .to(stuffRef, {
+                    text: word,
+                    duration: 1
+                })
+                .to(stuffRef, {
+                    text: "",
+                    duration: 1,
+                    delay: 1
+                })
+        })
+
+
+
+    }
     onScroll = () => {
         // If user reached bottom of the Page
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
