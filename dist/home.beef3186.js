@@ -5915,6 +5915,7 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
       tl.to(from, {
         y: "-100%",
         duration: .4,
+        autoAlpha: 0,
         onStart: function onStart() {
           document.body.classList.remove('is-menu-open');
         }

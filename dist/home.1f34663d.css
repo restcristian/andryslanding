@@ -615,5 +615,29 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
     font-size: 230px;
   }
 }
+.work-detail__description {
+  padding: 95px 0;
+  background-color: #6653a6;
+  font-family: "Montserrat", sans-serif;
+  color: #e5e5e6;
+}
+.work-detail__description-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.work-detail__description-text {
+  line-height: 28px;
+}
+.work-detail__screen {
+  background-color: #fff;
+}
+.work-detail__screen-image {
+  margin: -85px 0;
+  margin-bottom: -120px;
+}
+.work-detail__screen-image img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*# sourceMappingURL=/home.1f34663d.css.map */

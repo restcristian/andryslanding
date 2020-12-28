@@ -30,6 +30,7 @@ class Fade extends Highway.Transition {
             .to(from, {
                 y: "-100%",
                 duration: .4,
+                autoAlpha: 0,
                 onStart: function () {
                     document.body.classList.remove('is-menu-open')
                 }

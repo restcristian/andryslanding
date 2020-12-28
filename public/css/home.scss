@@ -480,4 +480,34 @@ body {
         text-transform: uppercase;
     }
 
+    &__description {
+        padding: 95px 0;
+        background-color: #6653a6;
+        font-family: "Montserrat", sans-serif;
+        color: #e5e5e6;
+    }
+
+    &__description-title {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    &__description-text {
+        line-height: 28px;
+    }
+
+    &__screen {
+        background-color: #fff;
+    }
+
+    &__screen-image {
+        margin: -85px 0;
+        margin-bottom: -120px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
 }
