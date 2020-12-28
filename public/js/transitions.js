@@ -22,6 +22,10 @@ class Fade extends Highway.Transition {
             document.body.classList.remove('is-menu-white');
         }
 
+        if (nextViewToRender === "work-fusion") {
+            document.body.classList.remove('is-menu-white');
+        }
+
         tl
             .to(from, {
                 y: "-100%",

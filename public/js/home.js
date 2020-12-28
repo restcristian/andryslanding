@@ -8,7 +8,7 @@ import {
 const H = new Highway.Core({
     renderers: {
         work: WorkRenderer,
-        home: HomeRenderer
+        home: HomeRenderer,
     },
     transitions: {
         home: Fade,
