@@ -395,6 +395,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   color: #333;
   display: block;
   margin-top: 12px;
+  line-height: 26px;
 }
 .home__description .stuff {
   position: relative;
@@ -422,6 +423,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .home__arrow {
   margin-top: 40px;
   text-align: center;
+}
+.home__presentation-content {
+  max-width: 1000px;
 }
 
 .work__main-col {
@@ -518,7 +522,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   font-family: "Source Code Pro", monospace;
   font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 26px;
 }
 .work__table {
   width: 100%;
