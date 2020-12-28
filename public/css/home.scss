@@ -1,5 +1,7 @@
+@use 'grid';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap');
+
 
 body {
     background: #beecfa;
@@ -10,12 +12,6 @@ body {
     box-sizing: border-box;
 }
 
-.row {
-    max-width: 1400px;
-    padding: 0 24px;
-    margin: 0 auto;
-    width: 100%;
-}
 
 // .main {
 //     @media(max-width: 767px) {
@@ -161,6 +157,17 @@ body {
     top: 50px;
 }
 
+.home,
+.work {
+    .grid-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        ;
+    }
+}
+
 .home__content,
 .work__content {
     display: flex;
@@ -169,13 +176,6 @@ body {
 }
 
 .home {
-    &__wrapper {
-        width: 100%;
-    }
-
-    &__presentation {
-        max-width: 832px;
-    }
 
     &__heading {
         color: #333;
@@ -192,9 +192,15 @@ body {
             font-weight: 300;
         }
 
-        @media(max-width: 844px) {
+        @media(max-width: 1023px) {
             font-size: 90px;
             line-height: 86px;
+        }
+
+        @media(max-width: 682px) {
+            font-size: 75px;
+            line-height: 76px;
+
         }
     }
 
@@ -250,11 +256,14 @@ body {
 }
 
 .work {
+    &__main-col {
+        position: relative;
+    }
 
     &__counter-container {
         position: absolute;
         top: 50%;
-        left: 40px;
+        left: 0;
         transform: translateY(-50%);
         color: #fff;
         text-align: center;
@@ -316,7 +325,7 @@ body {
     }
 
     &__picture {
-        max-width: 400px;
+        max-width: 656px;
 
         img {
             max-width: 100%;
@@ -330,7 +339,6 @@ body {
         flex: 1;
         font-family: "Montserrat", sans-serif;
         color: #fff;
-        padding-left: 24px;
     }
 
     &__type {
@@ -342,6 +350,10 @@ body {
         display: block;
         font-size: 60px;
         font-weight: 600;
+
+        @media(max-width: 1023px) {
+            font-size: 40px;
+        }
     }
 
     &__description {
@@ -373,7 +385,6 @@ body {
         left: 50%;
         width: 100%;
         height: 100%;
-        max-width: 1120px;
         transform: translateX(-50%);
     }
 

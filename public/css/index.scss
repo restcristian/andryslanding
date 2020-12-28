@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro:wght@300;400&display=swap');
 $mobile: 750px;
+
 body {
   background: #beecfa;
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -62,6 +65,7 @@ body {
     font-weight: lighter;
     margin: 0;
     line-height: 1.5;
+
     @media (max-width: $mobile) {
       font-size: 17px;
       margin-top: 12px;
@@ -90,6 +94,7 @@ body {
     padding-bottom: 12px;
     flex: 1;
     outline: none;
+
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
@@ -107,9 +112,11 @@ body {
       margin-bottom: 12px;
     }
   }
+
   &__email {
     margin-right: 24px;
   }
+
   &__button {
     -webkit-appearance: none;
     appearance: none;
@@ -122,6 +129,7 @@ body {
     color: #fff;
     cursor: pointer;
     font: normal normal 600 16px/24px Source Code Pro;
+
     @media (max-width: $mobile) {
       display: block;
       width: 100%;
