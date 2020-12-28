@@ -341,6 +341,10 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   top: 50px;
 }
 
+.home__wrapper,
+.work__wrapper {
+  width: 100%;
+}
 .home .grid-container,
 .work .grid-container {
   display: flex;
