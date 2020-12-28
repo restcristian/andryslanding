@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "dev-front": "parcel home.html"
+    "dev-front": "parcel work-fusion.html"
   },
   "keywords": [],
   "author": "",

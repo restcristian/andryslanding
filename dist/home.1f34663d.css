@@ -528,4 +528,44 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   transform: translateX(-50%);
 }
 
+.work-detail__banner {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-color: #fff;
+}
+.work-detail__banner-image {
+  position: relative;
+  z-index: 2;
+}
+.work-detail__banner-image img {
+  max-width: 100%;
+}
+.work-detail__banner-text {
+  position: absolute;
+  left: 50%;
+  bottom: 256px;
+  transform: translateX(-50%);
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: #a5a4b2;
+  text-transform: uppercase;
+}
+.work-detail__banner-text {
+  font-size: 100px;
+}
+@media screen and (min-width: 320px) {
+  .work-detail__banner-text {
+    font-size: calc(100px + 130 * ((100vw - 320px) / 1600));
+  }
+}
+@media screen and (min-width: 1920px) {
+  .work-detail__banner-text {
+    font-size: 230px;
+  }
+}
+
 /*# sourceMappingURL=/home.1f34663d.css.map */
