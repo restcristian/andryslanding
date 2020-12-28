@@ -510,4 +510,51 @@ body {
         }
     }
 
+    &__palette {
+        background-color: #f2f2f2;
+        padding-top: 168px;
+        padding-bottom: 191px;
+    }
+
+    &__palette-title {
+        font-family: "Montserrat", sans-serif;
+        color: #6653a6;
+        font-size: 28px;
+    }
+
+    &__palette-list {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-top: 6px;
+
+        li {
+            margin-right: 24px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+
+            &.purple {
+                background-color: #6652a6;
+            }
+
+            &.grey {
+                background-color: #dbe0e6;
+            }
+
+            &.black {
+                background-color: #24242c;
+            }
+        }
+    }
+
+    &__palette-description {
+        margin: 0;
+        margin-top: 20px;
+        font-family: "Source Code Pro", monospace;
+        color: #24242c;
+        font-size: 16px;
+        line-height: 32px;
+    }
 }

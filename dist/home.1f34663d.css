@@ -639,5 +639,45 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   max-width: 100%;
   height: auto;
 }
+.work-detail__palette {
+  background-color: #f2f2f2;
+  padding-top: 168px;
+  padding-bottom: 191px;
+}
+.work-detail__palette-title {
+  font-family: "Montserrat", sans-serif;
+  color: #6653a6;
+  font-size: 28px;
+}
+.work-detail__palette-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 6px;
+}
+.work-detail__palette-list li {
+  margin-right: 24px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.work-detail__palette-list li.purple {
+  background-color: #6652a6;
+}
+.work-detail__palette-list li.grey {
+  background-color: #dbe0e6;
+}
+.work-detail__palette-list li.black {
+  background-color: #24242c;
+}
+.work-detail__palette-description {
+  margin: 0;
+  margin-top: 20px;
+  font-family: "Source Code Pro", monospace;
+  color: #24242c;
+  font-size: 16px;
+  line-height: 32px;
+}
 
 /*# sourceMappingURL=/home.1f34663d.css.map */
