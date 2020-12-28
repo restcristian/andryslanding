@@ -349,16 +349,20 @@ body {
     &__title {
         display: block;
         font-size: 60px;
+        line-height: 60px;
         font-weight: 600;
 
         @media(max-width: 1023px) {
             font-size: 40px;
+            line-height: 40px;
         }
     }
 
     &__description {
         font-family: "Source Code Pro", monospace;
         font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     &__table {
@@ -375,7 +379,9 @@ body {
         }
 
         &-header {
-            font-weight: 600;
+            font-weight: 500;
+            font-family: "Source Code Pro", monospace;
+            text-transform: uppercase;
         }
     }
 

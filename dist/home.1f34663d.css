@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap");
 .grid-container {
-  max-width: 1920px;
+  max-width: calc(1920px + 42px);
   margin: 0 auto;
   padding: 0 21px;
 }
@@ -497,16 +497,20 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work__title {
   display: block;
   font-size: 60px;
+  line-height: 60px;
   font-weight: 600;
 }
 @media (max-width: 1023px) {
   .work__title {
     font-size: 40px;
+    line-height: 40px;
   }
 }
 .work__description {
   font-family: "Source Code Pro", monospace;
   font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 }
 .work__table {
   width: 100%;
@@ -519,7 +523,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   flex: 1;
 }
 .work__table-header {
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
 }
 .work__slider {
   position: absolute;
