@@ -565,6 +565,12 @@ body {
 
     &__frame {
         background-color: #fff;
+
+        &.tablet {
+            .work-detail__special-info {
+                padding-top: 0;
+            }
+        }
     }
 
     &__frame-image {
@@ -595,5 +601,9 @@ body {
         font-family: "Source Code Pro", monospace;
         font-size: 18px;
         line-height: 32px;
+    }
+
+    &__third-image {
+        margin-top: -100px;
     }
 }

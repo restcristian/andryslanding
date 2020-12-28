@@ -688,6 +688,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__frame {
   background-color: #fff;
 }
+.work-detail__frame.tablet .work-detail__special-info {
+  padding-top: 0;
+}
 .work-detail__frame-image img {
   max-width: 100%;
   height: auto;
@@ -710,6 +713,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   font-family: "Source Code Pro", monospace;
   font-size: 18px;
   line-height: 32px;
+}
+.work-detail__third-image {
+  margin-top: -100px;
 }
 
 /*# sourceMappingURL=/home.1f34663d.css.map */
