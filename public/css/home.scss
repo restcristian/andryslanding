@@ -464,6 +464,7 @@ body {
     &__banner-image {
         position: relative;
         z-index: 2;
+        display: flex;
 
         img {
             max-width: 100%;

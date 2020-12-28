@@ -591,6 +591,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__banner-image {
   position: relative;
   z-index: 2;
+  display: flex;
 }
 .work-detail__banner-image img {
   max-width: 100%;
