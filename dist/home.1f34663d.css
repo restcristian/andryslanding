@@ -3,6 +3,7 @@
 .grid-container {
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 21px;
 }
 
 .row {
@@ -438,6 +439,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   font-size: 34px;
   opacity: 0;
   visibility: hidden;
+  padding-left: 30px;
   transition: color 0.8s ease-in-out;
 }
 .work__counter-container.dark {
