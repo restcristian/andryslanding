@@ -236,6 +236,11 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body.is-menu-open .header__menu-dropdown {
   opacity: 1;
   visibility: visible;
@@ -691,6 +696,19 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   padding-bottom: 60px;
   background-color: #dbe0e6;
   margin-top: -90px;
+}
+.work-detail__special-info {
+  padding: 100px 0;
+}
+.work-detail__special-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+.work-detail__special-description {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 /*# sourceMappingURL=/home.1f34663d.css.map */

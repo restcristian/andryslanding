@@ -12,6 +12,10 @@ body {
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 // .main {
 //     @media(max-width: 767px) {
@@ -574,5 +578,21 @@ body {
         padding-bottom: 60px;
         background-color: #dbe0e6;
         margin-top: -90px;
+    }
+
+    &__special-info {
+        padding: 100px 0;
+    }
+
+    &__special-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    &__special-description {
+        font-family: "Source Code Pro", monospace;
+        font-size: 18px;
+        line-height: 32px;
     }
 }
