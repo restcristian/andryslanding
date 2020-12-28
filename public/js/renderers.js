@@ -63,7 +63,10 @@ export class HomeRenderer extends Highway.Renderer {
                 .to(stuffRef, {
                     text: "",
                     duration: 1,
-                    delay: 1
+                    delay: 1,
+                    onComplete: () => {
+                        stuffRef.innerHTML = ""
+                    }
                 })
         })
 

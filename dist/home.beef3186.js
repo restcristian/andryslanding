@@ -6370,7 +6370,10 @@ var HomeRenderer = /*#__PURE__*/function (_Highway$Renderer2) {
         }).to(stuffRef, {
           text: "",
           duration: 1,
-          delay: 1
+          delay: 1,
+          onComplete: function onComplete() {
+            stuffRef.innerHTML = "";
+          }
         });
       });
     }

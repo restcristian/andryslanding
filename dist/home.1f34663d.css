@@ -171,6 +171,8 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .home__description .stuff {
   position: relative;
   padding: 0 24px;
+  width: 150px;
+  display: inline-block;
 }
 .home__description .stuff:before {
   content: "";
@@ -180,6 +182,10 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   width: 100%;
   height: 1px;
   background-color: #333;
+}
+.home__description .stuff:after {
+  content: " ";
+  padding: 0 2px;
 }
 .home__description .bold {
   font-weight: bold;
