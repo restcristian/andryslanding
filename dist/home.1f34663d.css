@@ -679,5 +679,18 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   font-size: 16px;
   line-height: 32px;
 }
+.work-detail__frame {
+  background-color: #fff;
+}
+.work-detail__frame-image img {
+  max-width: 100%;
+  height: auto;
+}
+.work-detail__square {
+  padding-top: 58px;
+  padding-bottom: 60px;
+  background-color: #dbe0e6;
+  margin-top: -90px;
+}
 
 /*# sourceMappingURL=/home.1f34663d.css.map */
