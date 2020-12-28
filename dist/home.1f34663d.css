@@ -172,6 +172,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   position: relative;
   padding: 0 24px;
   width: 150px;
+  text-align: center;
   display: inline-block;
 }
 .home__description .stuff:before {
