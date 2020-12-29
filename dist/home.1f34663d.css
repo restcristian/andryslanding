@@ -543,6 +543,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work__table-column, .work__table-header {
   flex: 1;
 }
+.work__table-column {
+  line-height: 24px;
+}
 .work__table-header {
   font-weight: 500;
   font-family: "Source Code Pro", monospace;
@@ -587,6 +590,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   align-items: flex-end;
   position: relative;
   background-color: #fff;
+  overflow: hidden;
 }
 .work-detail__banner-image {
   position: relative;
@@ -607,6 +611,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   font-weight: 600;
   color: #a5a4b2;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .work-detail__banner-text {
   font-size: 100px;
@@ -640,6 +645,17 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__screen-image {
   margin: -85px 0;
   margin-bottom: -120px;
+  display: flex;
+}
+.work-detail__screen-image.border {
+  border-width: 70px;
+  border-style: solid;
+  margin-top: -66px;
+  margin-bottom: -66px;
+}
+.work-detail__screen-image.no-overlap {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .work-detail__screen-image img {
   max-width: 100%;
@@ -660,22 +676,44 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 6px;
+  flex-wrap: wrap;
 }
 .work-detail__palette-list li {
   margin-right: 24px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  margin-top: 6px;
 }
 .work-detail__palette-list li.purple {
   background-color: #6652a6;
+}
+.work-detail__palette-list li.purple-2 {
+  background-color: #9013fe;
+}
+.work-detail__palette-list li.purple-3 {
+  background-color: #e075f5;
 }
 .work-detail__palette-list li.grey {
   background-color: #dbe0e6;
 }
 .work-detail__palette-list li.black {
   background-color: #24242c;
+}
+.work-detail__palette-list li.black-2 {
+  background-color: #081420;
+}
+.work-detail__palette-list li.blue {
+  background-color: #15c9e0;
+}
+.work-detail__palette-list li.green {
+  background-color: #7ed321;
+}
+.work-detail__palette-list li.green-2 {
+  background-color: #50e3c2;
+}
+.work-detail__palette-list li.red {
+  background-color: #f35d64;
 }
 .work-detail__palette-description {
   margin: 0;
@@ -701,8 +739,12 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   background-color: #dbe0e6;
   margin-top: -90px;
 }
+.work-detail__square-extra {
+  margin-top: -40px;
+}
 .work-detail__special-info {
   padding: 100px 0;
+  color: #333333;
 }
 .work-detail__special-title {
   font-family: "Montserrat", sans-serif;
@@ -711,8 +753,16 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 }
 .work-detail__special-description {
   font-family: "Source Code Pro", monospace;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
+}
+.work-detail__tools {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  line-height: 24px;
+}
+.work-detail__tools-text {
+  margin: 0;
 }
 .work-detail__third-image {
   margin-top: -100px;
@@ -760,17 +810,45 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   color: inherit;
   text-decoration: none;
 }
+.work-detail__next-project-link svg path {
+  fill: currentColor;
+}
 .work-detail__next-project-link:hover {
   color: #fff;
-}
-.work-detail__next-project-link:hover svg path {
-  fill: #fff;
 }
 .work-detail__next-project-title {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.light-blue-bg {
+  background-color: #beecfa;
+}
+
+.light-blue-border {
+  border-color: #beecfa;
+}
+
+.dark-blue-bg {
+  background-color: #0a1c2e;
+}
+
+.dark-blue-2-bg {
+  background-color: #14283a;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.white-font-color:not(:hover) {
+  color: #fff;
+}
+
+.red-font-color {
+  color: #f0494c;
 }
 
 /*# sourceMappingURL=/home.1f34663d.css.map */

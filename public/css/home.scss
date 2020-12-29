@@ -405,6 +405,10 @@ body {
             flex: 1;
         }
 
+        &-column {
+            line-height: 24px;
+        }
+
         &-header {
             font-weight: 500;
             font-family: "Source Code Pro", monospace;
@@ -452,6 +456,8 @@ body {
 
 // Work-detail
 
+
+
 .work-detail {
     &__banner {
         min-height: calc(100vh - 100px);
@@ -459,6 +465,7 @@ body {
         align-items: flex-end;
         position: relative;
         background-color: #fff;
+        overflow: hidden;
     }
 
     &__banner-image {
@@ -483,6 +490,7 @@ body {
         font-weight: 600;
         color: #a5a4b2;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 
     &__description {
@@ -508,6 +516,19 @@ body {
     &__screen-image {
         margin: -85px 0;
         margin-bottom: -120px;
+        display: flex;
+
+        &.border {
+            border-width: 70px;
+            border-style: solid;
+            margin-top: -66px;
+            margin-bottom: -66px;
+        }
+
+        &.no-overlap {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
         img {
             max-width: 100%;
@@ -532,16 +553,25 @@ body {
         display: flex;
         padding: 0;
         margin: 0;
-        margin-top: 6px;
+        flex-wrap: wrap;
 
         li {
             margin-right: 24px;
             width: 70px;
             height: 70px;
             border-radius: 50%;
+            margin-top: 6px;
 
             &.purple {
                 background-color: #6652a6;
+            }
+
+            &.purple-2 {
+                background-color: #9013fe;
+            }
+
+            &.purple-3 {
+                background-color: #e075f5;
             }
 
             &.grey {
@@ -551,6 +581,32 @@ body {
             &.black {
                 background-color: #24242c;
             }
+
+            &.black-2 {
+                background-color: #081420;
+            }
+
+            &.blue {
+                background-color: #15c9e0;
+            }
+
+
+
+            &.green {
+                background-color: #7ed321;
+            }
+
+            &.green-2 {
+                background-color: #50e3c2;
+            }
+
+            &.red {
+                background-color: #f35d64;
+            }
+
+
+
+
         }
     }
 
@@ -587,8 +643,13 @@ body {
         margin-top: -90px;
     }
 
+    &__square-extra {
+        margin-top: -40px;
+    }
+
     &__special-info {
         padding: 100px 0;
+        color: #333333;
     }
 
     &__special-title {
@@ -599,9 +660,22 @@ body {
 
     &__special-description {
         font-family: "Source Code Pro", monospace;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 32px;
     }
+
+    &__tools {
+        font-family: "Source Code Pro", monospace;
+        font-size: 14px;
+        line-height: 24px;
+
+        &-text {
+            margin: 0;
+        }
+    }
+
+
+
 
     &__third-image {
         margin-top: -100px;
@@ -655,14 +729,14 @@ body {
         color: inherit;
         text-decoration: none;
 
+        svg {
+            path {
+                fill: currentColor;
+            }
+        }
+
         &:hover {
             color: #fff;
-
-            svg {
-                path {
-                    fill: #fff;
-                }
-            }
         }
     }
 
@@ -672,4 +746,34 @@ body {
         text-transform: uppercase;
         font-weight: 600;
     }
+}
+
+.light-blue-bg {
+    background-color: #beecfa;
+}
+
+.light-blue-border {
+    border-color: #beecfa;
+}
+
+.dark-blue-bg {
+    background-color: #0a1c2e;
+}
+
+.dark-blue-2-bg {
+    background-color: #14283a;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.white-font-color {
+    &:not(:hover) {
+        color: #fff;
+    }
+}
+
+.red-font-color {
+    color: #f0494c;
 }
