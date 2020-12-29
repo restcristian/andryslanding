@@ -549,8 +549,16 @@ body {
         margin-bottom: -120px;
         display: flex;
 
+        &.frontback {
+            margin-bottom: -265px;
+            margin-top: -42px;
+        }
+
         &.border {
-            border-width: 70px;
+            border-top-width: 70px;
+            border-bottom-width: 70px;
+            border-left-width: 50px;
+            border-right-width: 55px;
             border-style: solid;
             margin-top: -66px;
             margin-bottom: -66px;
@@ -606,6 +614,10 @@ body {
                 background-color: #e075f5;
             }
 
+            &.purple-4 {
+                background-color: #9108ec;
+            }
+
             &.grey {
                 background-color: #dbe0e6;
             }
@@ -626,8 +638,6 @@ body {
                 background-color: #15C9E0;
             }
 
-
-
             &.green {
                 background-color: #7ed321;
             }
@@ -636,10 +646,17 @@ body {
                 background-color: #50e3c2;
             }
 
+            &.green-3 {
+                background-color: #0ad10a;
+            }
+
             &.red {
                 background-color: #f35d64;
             }
 
+            &.pink {
+                background-color: #ff4d86;
+            }
 
 
 
@@ -677,6 +694,11 @@ body {
         padding-bottom: 60px;
         background-color: #dbe0e6;
         margin-top: -90px;
+
+        &.no-overlap {
+            margin-top: 0;
+            ;
+        }
     }
 
     &__square-extra {
@@ -782,6 +804,14 @@ body {
         text-transform: uppercase;
         font-weight: 600;
     }
+
+    .pt-100 {
+        padding-top: 100px;
+    }
+
+    .pb-100 {
+        padding-bottom: 100px;
+    }
 }
 
 .light-blue-bg {
@@ -790,6 +820,12 @@ body {
 
 .light-blue-border {
     border-color: #beecfa;
+}
+
+
+
+.purple-border {
+    border-color: #d4c1e1;
 }
 
 .dark-blue-bg {
@@ -808,6 +844,14 @@ body {
     background-color: #f0494c;
 }
 
+.light-black-bg {
+    background-color: #474747;
+}
+
+.gray-bg {
+    background-color: #f2f2f2;
+}
+
 .white-font-color {
     color: #fff;
 }
@@ -818,4 +862,12 @@ body {
 
 .light-blue-font-color {
     color: #15C9E0;
+}
+
+.purple-font-color {
+    color: #9108ec;
+}
+
+.creme-font-color {
+    color: #eda68d;
 }

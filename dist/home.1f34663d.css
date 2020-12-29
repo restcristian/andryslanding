@@ -675,8 +675,15 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   margin-bottom: -120px;
   display: flex;
 }
+.work-detail__screen-image.frontback {
+  margin-bottom: -265px;
+  margin-top: -42px;
+}
 .work-detail__screen-image.border {
-  border-width: 70px;
+  border-top-width: 70px;
+  border-bottom-width: 70px;
+  border-left-width: 50px;
+  border-right-width: 55px;
   border-style: solid;
   margin-top: -66px;
   margin-bottom: -66px;
@@ -723,6 +730,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__palette-list li.purple-3 {
   background-color: #e075f5;
 }
+.work-detail__palette-list li.purple-4 {
+  background-color: #9108ec;
+}
 .work-detail__palette-list li.grey {
   background-color: #dbe0e6;
 }
@@ -744,8 +754,14 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__palette-list li.green-2 {
   background-color: #50e3c2;
 }
+.work-detail__palette-list li.green-3 {
+  background-color: #0ad10a;
+}
 .work-detail__palette-list li.red {
   background-color: #f35d64;
+}
+.work-detail__palette-list li.pink {
+  background-color: #ff4d86;
 }
 .work-detail__palette-description {
   margin: 0;
@@ -770,6 +786,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   padding-bottom: 60px;
   background-color: #dbe0e6;
   margin-top: -90px;
+}
+.work-detail__square.no-overlap {
+  margin-top: 0;
 }
 .work-detail__square-extra {
   margin-top: -40px;
@@ -854,6 +873,12 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   text-transform: uppercase;
   font-weight: 600;
 }
+.work-detail .pt-100 {
+  padding-top: 100px;
+}
+.work-detail .pb-100 {
+  padding-bottom: 100px;
+}
 
 .light-blue-bg {
   background-color: #beecfa;
@@ -861,6 +886,10 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 
 .light-blue-border {
   border-color: #beecfa;
+}
+
+.purple-border {
+  border-color: #d4c1e1;
 }
 
 .dark-blue-bg {
@@ -879,6 +908,14 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   background-color: #f0494c;
 }
 
+.light-black-bg {
+  background-color: #474747;
+}
+
+.gray-bg {
+  background-color: #f2f2f2;
+}
+
 .white-font-color {
   color: #fff;
 }
@@ -889,6 +926,14 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 
 .light-blue-font-color {
   color: #15C9E0;
+}
+
+.purple-font-color {
+  color: #9108ec;
+}
+
+.creme-font-color {
+  color: #eda68d;
 }
 
 /*# sourceMappingURL=/home.1f34663d.css.map */
