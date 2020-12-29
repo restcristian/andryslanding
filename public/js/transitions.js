@@ -26,6 +26,10 @@ class Fade extends Highway.Transition {
             document.body.classList.remove('is-menu-white');
         }
 
+        window.history.replaceState({
+            ...history.state
+        }, '', `${nextViewToRender}.html`)
+
         tl
             .to(from, {
                 y: "-100%",
