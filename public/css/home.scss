@@ -312,6 +312,7 @@ body {
         font-size: 14px;
         text-transform: uppercase;
         margin-top: 12px;
+        font-family: "Source Code Pro", monospace;
     }
 
     &__presentation {
@@ -394,10 +395,12 @@ body {
 
     &__table {
         width: 100%;
+        font-family: "Source Code Pro", monospace;
+        font-size: 14px;
 
         &-row {
             display: flex;
-            padding-top: 10px;
+            padding-top: 5px;
         }
 
         &-column,
@@ -411,7 +414,6 @@ body {
 
         &-header {
             font-weight: 500;
-            font-family: "Source Code Pro", monospace;
             text-transform: uppercase;
         }
     }
@@ -456,7 +458,34 @@ body {
 
 // Work-detail
 
+// General
+.circular-link {
 
+    margin-top: 44px;
+
+    a {
+        border: 1px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        width: 236px;
+        font-family: "Source Code Pro", monospace;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 72px;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
 
 .work-detail {
     &__banner {
@@ -496,13 +525,15 @@ body {
     &__description {
         padding: 95px 0;
         background-color: #6653a6;
-        font-family: "Montserrat", sans-serif;
+
         color: #e5e5e6;
+        font-family: "Source Code Pro", monospace;
     }
 
     &__description-title {
         font-size: 28px;
         font-weight: 600;
+        font-family: "Montserrat", sans-serif;
     }
 
     &__description-text {
@@ -546,6 +577,7 @@ body {
         font-family: "Montserrat", sans-serif;
         color: #6653a6;
         font-size: 28px;
+        font-weight: 600;
     }
 
     &__palette-list {
@@ -588,6 +620,10 @@ body {
 
             &.blue {
                 background-color: #15c9e0;
+            }
+
+            &.blue-2 {
+                background-color: #15C9E0;
             }
 
 
@@ -776,4 +812,8 @@ body {
 
 .red-font-color {
     color: #f0494c;
+}
+
+.light-blue-font-color {
+    color: #15C9E0;
 }

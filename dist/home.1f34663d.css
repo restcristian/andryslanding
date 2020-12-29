@@ -473,6 +473,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   font-size: 14px;
   text-transform: uppercase;
   margin-top: 12px;
+  font-family: "Source Code Pro", monospace;
 }
 .work__presentation {
   width: 100%;
@@ -535,10 +536,12 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 }
 .work__table {
   width: 100%;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
 }
 .work__table-row {
   display: flex;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .work__table-column, .work__table-header {
   flex: 1;
@@ -548,7 +551,6 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 }
 .work__table-header {
   font-weight: 500;
-  font-family: "Source Code Pro", monospace;
   text-transform: uppercase;
 }
 .work__slider {
@@ -580,6 +582,31 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   transition: all 0.4s ease-in-out;
 }
 .work__view-more a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.circular-link {
+  margin-top: 44px;
+}
+.circular-link a {
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  width: 236px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 72px;
+  transition: all 0.4s ease-in-out;
+}
+.circular-link a:hover {
   background-color: #fff;
   color: #000;
 }
@@ -629,12 +656,13 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__description {
   padding: 95px 0;
   background-color: #6653a6;
-  font-family: "Montserrat", sans-serif;
   color: #e5e5e6;
+  font-family: "Source Code Pro", monospace;
 }
 .work-detail__description-title {
   font-size: 28px;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 .work-detail__description-text {
   line-height: 28px;
@@ -670,6 +698,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   font-family: "Montserrat", sans-serif;
   color: #6653a6;
   font-size: 28px;
+  font-weight: 600;
 }
 .work-detail__palette-list {
   list-style-type: none;
@@ -705,6 +734,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 }
 .work-detail__palette-list li.blue {
   background-color: #15c9e0;
+}
+.work-detail__palette-list li.blue-2 {
+  background-color: #15C9E0;
 }
 .work-detail__palette-list li.green {
   background-color: #7ed321;
@@ -849,6 +881,10 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 
 .red-font-color {
   color: #f0494c;
+}
+
+.light-blue-font-color {
+  color: #15C9E0;
 }
 
 /*# sourceMappingURL=/home.1f34663d.css.map */
