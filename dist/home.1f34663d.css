@@ -875,6 +875,10 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   background-color: #fff;
 }
 
+.red-bg {
+  background-color: #f0494c;
+}
+
 .white-font-color {
   color: #fff;
 }
