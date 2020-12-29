@@ -748,6 +748,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__palette-list li.blue-2 {
   background-color: #15C9E0;
 }
+.work-detail__palette-list li.blue-3 {
+  background-color: #3e5aa8;
+}
 .work-detail__palette-list li.green {
   background-color: #7ed321;
 }
@@ -759,6 +762,9 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 }
 .work-detail__palette-list li.red {
   background-color: #f35d64;
+}
+.work-detail__palette-list li.red-2 {
+  background-color: #d91f26;
 }
 .work-detail__palette-list li.pink {
   background-color: #ff4d86;
@@ -884,12 +890,12 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   padding-bottom: 100px;
 }
 
-.light-blue-bg {
-  background-color: #beecfa;
-}
-
 .light-blue-border {
   border-color: #beecfa;
+}
+
+.dark-blue-border {
+  border-color: #19255d;
 }
 
 .purple-border {
@@ -904,7 +910,19 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   background-color: #14283a;
 }
 
-.white-bg {
+.light-blue-bg {
+  background-color: #beecfa;
+}
+
+.light-blue-2-bg {
+  background-color: #edf2f9;
+}
+
+.blue-bg {
+  background-color: #41519f;
+}
+
+.light-blue-bg .white-bg {
   background-color: #fff;
 }
 
@@ -938,6 +956,10 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 
 .creme-font-color {
   color: #eda68d;
+}
+
+.black-font-color {
+  color: #333;
 }
 
 /*# sourceMappingURL=/home.1f34663d.css.map */
