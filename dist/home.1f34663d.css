@@ -875,7 +875,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   background-color: #fff;
 }
 
-.white-font-color:not(:hover) {
+.white-font-color {
   color: #fff;
 }
 
