@@ -27,7 +27,7 @@ class Fade extends Highway.Transition {
         }
 
         window.history.replaceState({
-            ...history.state
+            ...window.history.state
         }, '', `${nextViewToRender}.html`);
 
         console.log('changing url');

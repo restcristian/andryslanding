@@ -5918,7 +5918,7 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
         document.body.classList.remove('is-menu-white');
       }
 
-      window.history.replaceState(_objectSpread({}, history.state), '', "".concat(nextViewToRender, ".html"));
+      window.history.replaceState(_objectSpread({}, window.history.state), '', "".concat(nextViewToRender, ".html"));
       console.log('changing url');
       tl.to(from, {
         y: "-100%",
