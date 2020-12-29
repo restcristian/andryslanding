@@ -5920,6 +5920,7 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
 
       window.history.replaceState(_objectSpread({}, window.history.state), '', "".concat(nextViewToRender, ".html"));
       console.log('changing url');
+      window.scrollTo(0, 0);
       tl.to(from, {
         y: "-100%",
         duration: .4,

@@ -31,7 +31,7 @@ class Fade extends Highway.Transition {
         }, '', `${nextViewToRender}.html`);
 
         console.log('changing url');
-
+        window.scrollTo(0, 0);
         tl
             .to(from, {
                 y: "-100%",
