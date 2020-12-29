@@ -717,5 +717,60 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__third-image {
   margin-top: -100px;
 }
+.work-detail__next-project {
+  position: relative;
+  height: 274px;
+  background-color: #fff;
+}
+.work-detail__next-project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: 1;
+}
+.work-detail__next-project .grid-container {
+  position: relative;
+  z-index: 2;
+}
+.work-detail__next-project-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  transform: translate(-50%, -50%);
+}
+.work-detail__next-project-info {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #beecfa;
+  text-align: center;
+}
+.work-detail__next-project-link {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  color: inherit;
+  text-decoration: none;
+}
+.work-detail__next-project-link:hover {
+  color: #fff;
+}
+.work-detail__next-project-link:hover svg path {
+  fill: #fff;
+}
+.work-detail__next-project-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=/home.1f34663d.css.map */
