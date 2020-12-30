@@ -26,9 +26,6 @@ class Fade extends Highway.Transition {
             document.body.classList.remove('is-menu-white');
         }
 
-        window.history.replaceState({
-            ...window.history.state
-        }, '', `${nextViewToRender}.html`);
 
         console.log('changing url');
         window.scrollTo(0, 0);

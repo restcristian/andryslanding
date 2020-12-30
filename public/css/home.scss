@@ -487,6 +487,16 @@ body {
     }
 }
 
+@keyframes slide {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
 .work-detail {
     &__banner {
         min-height: calc(100vh - 100px);
@@ -509,17 +519,22 @@ body {
 
     &__banner-text {
         position: absolute;
-        left: 50%;
+        left: 100%;
         bottom: 256px;
-        transform: translateX(-50%);
+        display: block;
         font-family: "Montserrat", sans-serif;
-        width: 100%;
-        text-align: center;
-        @include fluid-type(320px, 1920px, 100px, 230px);
+        width: auto;
+        text-align: left;
+        font-size: 210px;
         font-weight: 600;
         color: #a5a4b2;
         text-transform: uppercase;
         white-space: nowrap;
+        animation: slide 10s linear infinite;
+
+        &--second {
+            animation-delay: 5.1s;
+        }
     }
 
     &__description {

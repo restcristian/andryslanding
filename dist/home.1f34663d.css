@@ -611,6 +611,14 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   color: #000;
 }
 
+@keyframes slide {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
 .work-detail__banner {
   min-height: calc(100vh - 100px);
   display: flex;
@@ -629,29 +637,21 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 }
 .work-detail__banner-text {
   position: absolute;
-  left: 50%;
+  left: 100%;
   bottom: 256px;
-  transform: translateX(-50%);
+  display: block;
   font-family: "Montserrat", sans-serif;
-  width: 100%;
-  text-align: center;
+  width: auto;
+  text-align: left;
+  font-size: 210px;
   font-weight: 600;
   color: #a5a4b2;
   text-transform: uppercase;
   white-space: nowrap;
+  animation: slide 10s linear infinite;
 }
-.work-detail__banner-text {
-  font-size: 100px;
-}
-@media screen and (min-width: 320px) {
-  .work-detail__banner-text {
-    font-size: calc(100px + 130 * ((100vw - 320px) / 1600));
-  }
-}
-@media screen and (min-width: 1920px) {
-  .work-detail__banner-text {
-    font-size: 230px;
-  }
+.work-detail__banner-text--second {
+  animation-delay: 5.1s;
 }
 .work-detail__description {
   padding: 95px 0;
