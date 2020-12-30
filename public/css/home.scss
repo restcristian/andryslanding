@@ -736,6 +736,7 @@ body {
         font-family: "Source Code Pro", monospace;
         font-size: 14px;
         line-height: 24px;
+        margin-top: 12px;
 
         &-text {
             margin: 0;
@@ -818,13 +819,28 @@ body {
 
 }
 
-.pt-100 {
-    padding-top: 100px;
+@for $i from 1 through 100 {
+    .pt-#{$i} {
+        padding-top: $i * 1px;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $i * 1px;
+    }
+
+    .pl-#{$i} {
+        padding-left: $i * 1px;
+    }
+
+    .pr-#{$i} {
+        padding-right: $i * 1px;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $i * 1px;
+    }
 }
 
-.pb-100 {
-    padding-bottom: 100px;
-}
 
 .light-blue-border {
     border-color: #beecfa;
