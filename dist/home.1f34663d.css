@@ -637,21 +637,17 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 }
 .work-detail__banner-text {
   position: absolute;
-  left: 100%;
+  left: 0;
   bottom: 256px;
   display: block;
   font-family: "Montserrat", sans-serif;
-  width: auto;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   font-size: 210px;
   font-weight: 600;
   color: #a5a4b2;
   text-transform: uppercase;
   white-space: nowrap;
-  animation: slide 10s linear infinite;
-}
-.work-detail__banner-text--second {
-  animation-delay: 5.1s;
 }
 .work-detail__description {
   padding: 95px 0;
@@ -2891,6 +2887,10 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   border-color: #19255d;
 }
 
+.light-gray-border {
+  border-color: #d8d8d8;
+}
+
 .purple-border {
   border-color: #d4c1e1;
 }
@@ -2915,7 +2915,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   background-color: #41519f;
 }
 
-.light-blue-bg .white-bg {
+.white-bg {
   background-color: #fff;
 }
 
