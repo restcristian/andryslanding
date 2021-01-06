@@ -580,6 +580,11 @@ body {
             margin-bottom: 0;
         }
 
+        &.overlap-bt{
+            margin-top: 0;
+            margin-bottom: -139px;
+        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -827,10 +832,17 @@ body {
         font-weight: 600;
     }
 
+    &__picture{
+        height: 618px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
 
 }
 
-@for $i from 1 through 100 {
+@for $i from 0 through 100 {
     .pt-#{$i} {
         padding-top: $i * 1px;
     }
@@ -857,6 +869,7 @@ body {
     border-color: #beecfa;
 }
 
+
 .dark-blue-border {
     border-color: #19255d;
 }
@@ -869,6 +882,10 @@ body {
 
 .purple-border {
     border-color: #d4c1e1;
+}
+
+.blue-bg{
+    background-color: #3b5aa8;
 }
 
 .dark-blue-bg {
