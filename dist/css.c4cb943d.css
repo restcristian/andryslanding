@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
 }
 
-@media (max-width: 889px) {
+@media (max-width: 960px) {
   main[data-router-wrapper],
 header.header {
     display: none;
@@ -18,7 +18,7 @@ header.header {
   height: 100vh;
   background-color: #aedcec;
 }
-@media (min-width: 890px) {
+@media (min-width: 961px) {
   .mobile-content {
     display: none;
   }
