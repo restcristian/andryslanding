@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Code+Pro:wght@300;400&display=swap');
 $mobile: 750px;
+$bp-max: 889px;
+$bp-min: $bp-max + 1px;
 
 body {
   background: #beecfa;
@@ -10,129 +11,160 @@ body {
   box-sizing: border-box;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 32px;
-
-  &__icon-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__icon-list-item {
-    img {
-      width: 42px;
-      height: 42px;
-    }
+main[data-router-wrapper],
+header.header{
+  @media(max-width: $bp-max){
+    display: none;;
   }
 }
 
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  max-width: 900px;
-  width: 100%;
-  padding: 0 24px;
-
-  &__logo-image {
-    width: 103px;
+.mobile-content{
+  height: 100vh;
+  background-color: #aedcec;
+  @media(min-width: $bp-min){
+    display: none;
   }
-
-  &__title {
-    margin: 0;
-    color: #333333;
-    font: normal normal 600 80px/116px Montserrat;
-    line-height: 1;
-
-    @media (max-width: $mobile) {
-      font-size: 50px;
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 32px;
+    width: auto;
+    left: auto;
+  
+    &__icon-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+     
+    }
+  
+    &__icon-list-item {
+      margin-bottom: 4px;
+      img {
+        width: 42px;
+        height: 42px;
+      }
     }
   }
-
-  &__title-message {
-    margin-top: 47px;
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    width: 100%;
+    padding: 0 24px;
     text-align: center;
-  }
 
-  &__description {
-    font: normal normal normal 23px/32px Source Code Pro;
-    font-weight: lighter;
-    margin: 0;
-    line-height: 1.5;
-
-    @media (max-width: $mobile) {
-      font-size: 17px;
-      margin-top: 12px;
+    color: #333;
+    
+  
+    &__logo-image {
+      width: 103px;
     }
-  }
+  
+    &__title {
+      margin: 0;
+      margin-top: 32px;
+      color: #333333;
+      font-family: "Montserrat", sans-serif;
+      font-size: 32px;
+      line-height: 41px;
 
-  &__contact-form-wrapper {
-    display: flex;
-    margin-top: 28px;
-
-    @media (max-width: $mobile) {
-      display: block;
+      .light {
+        font-weight: 500;
+      }
     }
-  }
-
-  &__input {
-    color: #333333;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    font: normal normal normal 23px/28px Source Code Pro;
-    border-bottom: 1px solid #333333;
-    padding-bottom: 12px;
-    flex: 1;
-    outline: none;
-
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus,
-    &:-webkit-autofill:active {
-      background-color: transparent !important;
-      color: #333333 !important;
-      -webkit-box-shadow: 0 0 0 1000px white inset !important;
-      -webkit-text-fill-color: #333333 !important;
+  
+    &__title-message {
+      margin-top: 47px;
+      text-align: center;
     }
+  
+    &__description {
+      font-family: "Montserrat", sans-serif;
+      font-weight: lighter;
+      margin: 0;
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 32px;
+     
+      .bold {
+        font-weight: 600;
+      }
 
-    @media (max-width: $mobile) {
-      display: block;
-      flex: 0 1 auto;
-      width: 100%;
-      margin-bottom: 12px;
+      a {
+        color: inherit;
+        font-weight: bold;
+      }
     }
-  }
-
-  &__email {
-    margin-right: 24px;
-  }
-
-  &__button {
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333333;
-    width: 236px;
-    height: 72px;
-    color: #fff;
-    cursor: pointer;
-    font: normal normal 600 16px/24px Source Code Pro;
-
-    @media (max-width: $mobile) {
-      display: block;
-      width: 100%;
+  
+    &__contact-form-wrapper {
+      display: flex;
+      margin-top: 28px;
+  
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+  
+    &__input {
+      color: #333333;
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+      font-family: "Source Code Pro", monospace;
+      border-bottom: 1px solid #333333;
+      padding-bottom: 12px;
+      flex: 1;
+      outline: none;
+  
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        color: #333333 !important;
+        -webkit-box-shadow: 0 0 0 1000px white inset !important;
+        -webkit-text-fill-color: #333333 !important;
+      }
+  
+      @media (max-width: $mobile) {
+        display: block;
+        flex: 0 1 auto;
+        width: 100%;
+        margin-bottom: 12px;
+      }
+    }
+  
+    &__email {
+      margin-right: 24px;
+    }
+  
+    &__button {
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333333;
+      width: 236px;
+      height: 72px;
+      color: #fff;
+      cursor: pointer;
+      font-family: "Source Code Pro", monospace;
+  
+      @media (max-width: $mobile) {
+        display: block;
+        width: 100%;
+      }
     }
   }
 }
+

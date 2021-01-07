@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Instagram" width="42" height="42" viewBox="0 0 42 42">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <g id="Ellipse_6" fill="none" stroke="#333" stroke-width="3px">
+        <circle cx="21" cy="21" r="21" stroke="none"/>
+        <circle cx="21" cy="21" r="19.5"/>
+    </g>
+    <g id="Group_19" transform="translate(-105.312 -66.931)">
+        <path id="Path_251" d="M138.813 94.344a5.661 5.661 0 1 0 5.608 5.715 5.661 5.661 0 0 0-5.608-5.715zm-.081 8.528a2.867 2.867 0 1 1 2.894-2.839 2.867 2.867 0 0 1-2.894 2.839z" class="cls-2" transform="translate(-11.723 -11.469)"/>
+        <path id="Path_252" d="M126.956 77.448h-10.2a.928.928 0 0 0-.925.925v10.2a11.129 11.129 0 1 0 11.129-11.129zm-7.646 10.975a7.727 7.727 0 1 1 7.654 7.8 7.727 7.727 0 0 1-7.654-7.8z" class="cls-2"/>
+    </g>
+</svg>
