@@ -406,6 +406,10 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   margin-top: 12px;
   line-height: 26px;
 }
+.home__description .home__link {
+  color: inherit;
+  text-decoration: none;
+}
 .home__description .stuff {
   position: relative;
   padding: 0 24px;

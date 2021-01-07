@@ -57,6 +57,7 @@ header.header {
 }
 .mobile-content .content__logo-image {
   width: 103px;
+  transform: scaleX(-1);
 }
 .mobile-content .content__title {
   margin: 0;
