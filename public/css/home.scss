@@ -850,23 +850,27 @@ body {
 
 @for $i from 0 through 100 {
     .pt-#{$i} {
-        padding-top: $i * 1px;
+        padding-top: $i * 1px !important;
     }
 
     .pb-#{$i} {
-        padding-bottom: $i * 1px;
+        padding-bottom: $i * 1px !important;
     }
 
     .pl-#{$i} {
-        padding-left: $i * 1px;
+        padding-left: $i * 1px !important;
     }
 
     .pr-#{$i} {
-        padding-right: $i * 1px;
+        padding-right: $i * 1px !important;
     }
 
     .mb-#{$i} {
-        margin-bottom: $i * 1px;
+        margin-bottom: $i * 1px !important;
+    }
+
+    .mt-#{$i} {
+        margin-top: $i * 1px !important;
     }
 }
 
