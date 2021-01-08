@@ -27,6 +27,7 @@ app.use(function (req, res, next) {
 });
 
 app.get('/', (req, res) => {
+  console.log('tamo aqui')
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
   // res.send(views.landing({ message: '' }));
 });
