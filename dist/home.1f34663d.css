@@ -699,6 +699,7 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
 .work-detail__screen-image img {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 .work-detail__palette {
   background-color: #f2f2f2;
