@@ -17,21 +17,43 @@ app.use(bodyParser.urlencoded({
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function (req, res, next) {
-  if (!/https/.test(req.protocol)) {
-    console.log(req.headers.host + req.url);
-    res.redirect("https://" + req.headers.host + req.url);
-  } else {
-    return next();
-  }
-});
-
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
   // res.send(views.landing({ message: '' }));
 });
 
+app.post('/', (req, res) => {
+  const {
+    email,
+    message
+  } = req.body;
 
-
+  const mailData = {
+    to: 'hi@andrysfrias.com',
+    from: 'andrysfrias@gmail.com',
+    subject: `Message from the Landing Page <${email}>`,
+    text: message,
+    html: `<strong>${message}</strong>`,
+  };
+  let result = {};
+  sgMail
+    .send(mailData)
+    .then((data) => {
+      console.log('data', data);
+      result = {
+        message: 'Gracias por su mensaje.',
+      };
+      return res.send(views.landing(result));
+    })
+    .catch((error) => {
+      console.log('error', error);
+      if (error.response) {
+        result = {
+          message: 'Su mensaje no pudo ser enviado.',
+        };
+        return res.send(views.landing(result));
+      }
+    });
+});
 
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
