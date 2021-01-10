@@ -19,6 +19,7 @@ if (env !== "development") {
 
   // set up a route to redirect http to https
   app.get((req, res, next) => {
+    console.log(req.headers.host);
     if (req.headers["x-forwarded-proto"] !== 'https') {
       res.redirect("https://" + req.headers.host + req.url)
     } else {
