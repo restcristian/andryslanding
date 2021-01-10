@@ -245,8 +245,19 @@ body.is-menu-open .header__menu-dropdown {
   opacity: 1;
   visibility: visible;
 }
-body.is-menu-white .header__btn-toggle, body.is-menu-open .header__btn-toggle {
+body.is-menu-open .header__btn-toggle:before {
+  opacity: 0;
+  visibility: hidden;
+}
+body.is-menu-open .header__btn-toggle > svg {
+  opacity: 1;
+  visibility: visible;
+}
+body.is-menu-white .header__btn-toggle:before, body.is-menu-open .header__btn-toggle:before {
   background-color: #fff;
+}
+body.is-menu-white .header__btn-toggle > svg path, body.is-menu-open .header__btn-toggle > svg path {
+  fill: #fff;
 }
 body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg path {
   fill: #fff;
@@ -280,13 +291,27 @@ body.is-menu-white .header__logo svg path, body.is-menu-open .header__logo svg p
   border: none;
   padding: 0;
   margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  position: relative;
+}
+.header__btn-toggle:before {
+  content: "";
+  display: block;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #333;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  outline: none;
+}
+.header__btn-toggle > svg {
+  height: 25px;
+  width: 25px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .header__btn-toggle:hover {
   transform: scale(1.4);
