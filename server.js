@@ -18,15 +18,14 @@ app.use(express.static(path.join(__dirname, 'dist')));
 if (env !== "development") {
 
   // set up a route to redirect http to https
-  app.use(function (req, res, next) {
-    if (req.secure) {
-      // request was via https, so do no special handling
-      next();
-    } else {
-      // request was via http, so redirect to https
-      res.redirect('https://' + req.headers.host + req.url);
+  app.get("*", (req, res, next) => {
+    if (req.headers["x-forwarded-proto"]) {
+      res.redirect("https://" + req.headers.host + req.url)
     }
-  });
+    if (!res.headersSent) {
+      next()
+    }
+  })
 }
 
 app.get('/', (req, res) => {
